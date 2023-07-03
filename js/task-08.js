@@ -4,7 +4,7 @@ function onSubmit(e) {
     e.preventDefault();
     const { email, password } = e.target.elements;
     if (!(email.value.trim() || password.value.trim())) {
-        returnalert("Hello world!");
+        return alert("Hello world!");
     }
     const data = {
         [email.name]: email.value,
